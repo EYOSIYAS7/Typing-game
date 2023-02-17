@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+
+    <style>
+      body {
+        background: #000;
+      }
+    </style>
+    <title>Word Game</title>
+  </head>
+  <body>
+    <div>
+      <h1
+        class="display-3 p-3 text-center fw-bold bg-dark text-white"
+        id="title"
+      >
+        Word Game
+      </h1>
+    </div>
+    <div class="container-md">
+      <div class="row justify-content-center">
+        <div class="col-sm-9 col-lg-6 text-center">
+          <p class="lead pt-4 text-white">
+            Type the word within
+            <span class="display-6" id="infotime"> 5</span> seconds
+          </p>
+
+          <h2 class="display-4 p-4 text-white" id="word">hello</h2>
+
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Enter the word above"
+            id="inputWord"
+          />
+          <p class="lead text-white mt-5 display-6" id="result"></p>
+          <p class="p-4">
+            <span class="lead fw-bold me-5 text-white" id="timeLeft"
+              >Time left:</span
+            >
+            <span class="lead fw-bold ms-5 me-4 text-white" id="scored"
+              >score: 0</span
+            >
+            <span class="lead fw-bold ms-4 text-white" id="high-score"
+              >high score: 0</span
+            >
+          </p>
+          <p class="lead fw-bold ms-4 mb-0 text-white text-start">
+            choose Level
+            <span class="text-white mb-2">
+              <ul class="list-group-horizontal-sm">
+                <li class="list-group-item">
+                  <button
+                    class="btn mb-2 btn-outline-success text-white"
+                    id="bmode"
+                  >
+                    bigener
+                  </button>
+                </li>
+                <li class="list-group-item">
+                  <button
+                    class="btn mb-2 btn-outline-primary text-white"
+                    id="imode"
+                  >
+                    Intermediate
+                  </button>
+                </li>
+                <li class="list-group-item">
+                  <button
+                    class="btn mb-2 btn-outline-danger text-white"
+                    id="amode"
+                  >
+                    Advanced
+                  </button>
+                </li>
+              </ul></span
+            >
+          </p>
+          <div class="card bg-dark text-white mb-4">
+            <div class="card-body">
+              <p class="card-title fw-bold lead">INSTRUCTION</p>
+              <div class="card-text">
+                Type the word in the given amount of seconds to score.To play
+                again just type the current word ,your score will reset
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
